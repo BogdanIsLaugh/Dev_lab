@@ -1,0 +1,6 @@
+language: python
+os: ubuntu
+python:
+        - "3.8"
+script:
+        - sudo make install test -C $PWD/Lab2/

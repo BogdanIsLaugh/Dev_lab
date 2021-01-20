@@ -46,3 +46,11 @@ No URL passed to function
 Time is:  06:52:19 PM
 Date is:  01-18-2021
 Доброї ночі
+============================= test session starts ==============================
+platform linux -- Python 3.8.5, pytest-6.2.1, py-1.10.0, pluggy-0.13.1
+rootdir: /home/yyang/Dev_lab/Lab2
+collected 4 items
+
+tests/tests.py ....                                                      [100%]
+
+============================== 4 passed in 1.55s ===============================
