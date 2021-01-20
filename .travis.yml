@@ -3,4 +3,5 @@ os: ubuntu
 python:
         - "3.8"
 script:
-        - sudo make install tests -C $PWD/Lab2/
+        - cd Lab2
+        - sudo make install tests
