@@ -6,3 +6,5 @@ python:
         - "3.9"
 script:
         - sudo make install test -C $PWD/Lab2/
+        - cd Lab4/
+        - sudo docker-compose build

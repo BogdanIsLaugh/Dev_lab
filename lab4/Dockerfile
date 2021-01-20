@@ -13,11 +13,11 @@ RUN apt-get install git -y && pip install pipenv
 WORKDIR /lab
 
 # Завантажуємо файли з Git
-RUN git clone https://github.com/BogdanIsLaugh/devopsLab1.git
+RUN git clone https://github.com/BogdanIsLaugh/Dev_lab.git
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
 WORKDIR /app
-RUN cp -r /lab/devopsLab1/lab3/* .
+RUN cp -r /lab/Dev_lab/Lab3/* .
 
 # Інсталюємо всі залежності
 

@@ -1,10 +1,10 @@
-version: '3.9'
+version: '3.3'
 services: 
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    image: BogdanIsLaugh/lab4:django-app
+    image: bogdanislaugh/lab4:django-app
     container_name: django-app
     networks: 
       - public
@@ -14,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.site
-    image: BogdanIsLaugh/lab4:django-monitor
+    image: bogdanislaugh/lab4:django-monitor
     container_name: django-monitor
     networks: 
       - public
