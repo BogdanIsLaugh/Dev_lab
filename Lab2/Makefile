@@ -4,7 +4,7 @@ all: install test run deploy
 
 install:
 	@echo "Installing pipenv and dependencies.";
-	python3 -m pip install pipenv;	 	
+	pip install pipenv;	 	
 	python3 -m pipenv --three;
 	
 	
