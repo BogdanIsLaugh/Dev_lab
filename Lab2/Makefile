@@ -3,27 +3,31 @@
 all: install test run deploy
 
 install:
-	@echo "Installing pipenv and dependencies.";
-	pip install pipenv;	 	
-	python3 -m pipenv --python 3.9;
-	
-	
-	python3 -m pipenv install requests;
-	python3 -m pipenv install ntplib;
+	@echo "Installing pipenv and dependencies."
+	# Ваш код тут
+	pip install pipenv
+	pipenv --three
+	pipenv install ntplib
+	pipenv install requests
+	pipenv install pytest
+	pipenv lock
 
-	python3 -m pipenv install pytest;	
 
-tests:
-	@echo "Start tests.";
-	python3 -m pipenv run pytest ./tests/tests.py;
+test:
+	@echo "Start tests."
+	# Ваш код тут
+	#pipenv shell 
+	pipenv run python3 -m pytest ./tests/tests.py
+	exit 0
 
 run:
 	@echo "Run Python app."
-	python3 -m pipenv run python app.py
-
+	# Ваш код тут
+	pipenv shell
+	python3 app.py >>results.txt
+	exit
 deploy:
-	@echo "Adding and Committing results.txt to git.";
-	#python3 -m pipenv run pytest ./tests/tests.py > results.txt; python3 -m pipenv run python app.py >> results.txt
-	git add ./results.txt;
-	git commit -m "Lab2: deploy through make";
+	@echo "Adding and Committing results.txt to git."
+	git add results.txt 
+	git commit -m "Lab2:1st make commit"
 	git push origin main

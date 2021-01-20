@@ -1,7 +1,8 @@
 language: python
 os: ubuntu
+services:
+        - docker
 python:
-        - "3.8"
+        - "3.9"
 script:
-        - cd Lab2
-        - sudo make install tests
+        - sudo make install test -C $PWD/Lab2/
