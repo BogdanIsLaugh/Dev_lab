@@ -13,7 +13,7 @@ install:
 
 	python3 -m pipenv install pytest;	
 
-test:
+tests:
 	@echo "Start tests.";
 	python3 -m pipenv run pytest ./tests/tests.py;
 
