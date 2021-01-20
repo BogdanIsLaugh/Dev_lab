@@ -15,11 +15,11 @@ install:
 
 test:
 	@echo "Start tests.";
-	python3 -m pipenv run pytest ./tests/tests.py >> results.txt;
+	python3 -m pipenv run pytest ./tests/tests.py;
 
 run:
 	@echo "Run Python app."
-	python3 -m pipenv run python app.py >> results.txt
+	python3 -m pipenv run python app.py;
 
 deploy:
 	@echo "Adding and Committing results.txt to git.";
