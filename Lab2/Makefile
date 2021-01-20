@@ -4,8 +4,8 @@ all: install test run deploy
 
 install:
 	@echo "Installing pipenv and dependencies.";
-	pip install pipenv;	 	
-	python3 -m pipenv --three;
+	python3 -m pip install pipenv;	 	
+	python3 -m pipenv --python 3.7;
 	
 	
 	python3 -m pipenv install requests;
@@ -13,13 +13,13 @@ install:
 
 	python3 -m pipenv install pytest;	
 
-tests:
+test:
 	@echo "Start tests.";
-	python3 -m pipenv run pytest ./tests/tests.py;
+	python3 -m pipenv run pytest ./tests/tests.py >> results.txt;
 
 run:
 	@echo "Run Python app."
-	python3 -m pipenv run python app.py;
+	python3 -m pipenv run python app.py >> results.txt
 
 deploy:
 	@echo "Adding and Committing results.txt to git.";
