@@ -1,0 +1,13 @@
+language: python
+os: ubuntu
+services:
+        - docker
+python:
+        - "3.9"
+script:
+        - sudo make install test -C $PWD/Lab2/
+        - cd lab4/
+        - sudo docker-compose build
+        - cd ..
+        - cd lab5/
+        - sudo docker-compose build
