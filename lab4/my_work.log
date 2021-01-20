@@ -1,12 +1,12 @@
-Docker version 20.10.0, build 7287ab3
+Docker version 19.03.11, build dd360c7
 
-Usage:  docker [OPTIONS] COMMAND
+Usage:	docker [OPTIONS] COMMAND
 
 A self-sufficient runtime for containers
 
 Options:
       --config string      Location of client config files (default
-                           "C:\\Users\\asdmy\\.docker")
+                           "/home/yyang/snap/docker/471/.docker")
   -c, --context string     Name of the context to use to connect to the
                            daemon (overrides DOCKER_HOST env var and
                            default context set with "docker context use")
@@ -17,27 +17,24 @@ Options:
                            (default "info")
       --tls                Use TLS; implied by --tlsverify
       --tlscacert string   Trust certs signed only by this CA (default
-                           "C:\\Users\\asdmy\\.docker\\ca.pem")
+                           "/home/yyang/snap/docker/471/.docker/ca.pem")
       --tlscert string     Path to TLS certificate file (default
-                           "C:\\Users\\asdmy\\.docker\\cert.pem")
+                           "/home/yyang/snap/docker/471/.docker/cert.pem")
       --tlskey string      Path to TLS key file (default
-                           "C:\\Users\\asdmy\\.docker\\key.pem")
+                           "/home/yyang/snap/docker/471/.docker/key.pem")
       --tlsverify          Use TLS and verify the remote
   -v, --version            Print version information and quit
 
 Management Commands:
-  app*        Docker App (Docker Inc., v0.9.1-beta3)
   builder     Manage builds
-  buildx*     Build with BuildKit (Docker Inc., v0.4.2-docker)
   config      Manage Docker configs
   container   Manage containers
   context     Manage contexts
+  engine      Manage the docker engine
   image       Manage images
-  manifest    Manage Docker image manifests and manifest lists
   network     Manage networks
   node        Manage Swarm nodes
   plugin      Manage plugins
-  scan*       Docker Scan (Docker Inc., v0.5.0)
   secret      Manage Docker secrets
   service     Manage services
   stack       Manage Docker stacks
@@ -52,6 +49,7 @@ Commands:
   commit      Create a new image from a container's changes
   cp          Copy files/folders between a container and the local filesystem
   create      Create a new container
+  deploy      Deploy a new stack or update an existing stack
   diff        Inspect changes to files or directories on a container's filesystem
   events      Get real time events from the server
   exec        Run a command in a running container
@@ -89,19 +87,3 @@ Commands:
   wait        Block until one or more containers stop, then print their exit codes
 
 Run 'docker COMMAND --help' for more information on a command.
-[1;96mTo get more help with docker, check out guides at https://docs.docker.com/go/guides/[0m
- _______________ 
-< Docker is fun >
- --------------- 
-    \
-     \
-      \     
-                    ##        .            
-              ## ## ##       ==            
-           ## ## ## ##      ===            
-       /""""""""""""""""___/ ===        
-  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-       \______ o          __/            
-        \    \        __/             
-          \____\______/   
-Docker version 20.10.0, build 7287ab3
