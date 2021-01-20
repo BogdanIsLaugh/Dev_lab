@@ -1,6 +1,6 @@
 FROM python:3.9-slim
 
-LABEL author="Mykhailo"
+LABEL author="Bogdan"
 LABEL version=1.0
 
 # оновлюємо систему
@@ -13,7 +13,7 @@ RUN apt-get install git -y && pip install pipenv
 WORKDIR /lab
 
 # Завантажуємо файли з Git
-RUN git clone https://github.com/mixapaco/devopsLab1.git
+RUN git clone https://github.com/BogdanIsLaugh/devopsLab1.git
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
 WORKDIR /app
